@@ -1,0 +1,30 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <Text text = "Click a Button"
+          fx:id = "animalName"
+          GridPane.rowIndex="0"></Text>
+
+    <Button text = "Dog"
+            fx:id = "buttonDog"
+            onAction="#clickDog"
+            GridPane.rowIndex="1"></Button>
+
+    <Button text = "Fish"
+            fx:id="buttonFish"
+            onAction="#clickFish"
+            GridPane.rowIndex="2"></Button>
+
+    <Button text = "Cat"
+            fx:id="buttonCat"
+            onAction="#clickCat"
+            GridPane.rowIndex="3"></Button>
+
+</GridPane>
